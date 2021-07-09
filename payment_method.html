@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="header_footer_responsice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity=
+        "sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=
+        "anonymous" />  
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo_nav flex-header">
+                <div class="left_side">
+                    <div class="image col1">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <div class="col2">
+                        <ul>
+                            <li><a href="#">How it Works</a></li>
+                            <li><a href="#">Fleet</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">FaQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="right_side">
+                            <ul>
+                                <li class="underline"><a href="mechanic_page.html">Join as mechanic</a></li>
+                                    <li class="underline"><a href="signup_page.html">Sign Up</a></li>
+                                    <li class="active"><a href="signin_page.html">Log in</a></li>
+                            </ul>
+                            <div class="menu-open">
+                                <i class="fa fa-bars menu-open"  onclick="OpenSideMenu()"></i>
+                            </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!---Side menu for a smaller screen-->
+    <div id="side-menu" class="menu">
+        <ul>
+            <li><a href="#" class="menu-close" onclick="CloseSideMenu()">&times;</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Fleet</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">FaQs</a></li>
+        </ul>
+    </div>
+    
+<section class="payment_method">
+    <div class="container">
+        <div class="payment_method_head">
+            <h4> Select a Payment Method </h4> 
+            <h5> Choose the payment method that best suits you </h5>
+        </div>
+        <div class="pay">
+            <h4>Most Popular</h4>
+            <div class="flex-pay">
+                <a href="card_page.html" class="col">
+                    <div class="col-flex">
+                        <img src="images/master card.png" alt="mastercard">
+                        <div class="text">
+                            <h5>Credit card</h5>
+                           <p> Without commission</p>
+                        </div>
+                    </div>
+                </a> 
+                <a href="" class="col">
+                    <div class="col-flex">
+                        <img src="images/paypal.png" alt="paypal">
+                        <div class="text">
+                            <h5>Credit card</h5>
+                           <p> Without commission</p>
+                        </div>
+                    </div>
+                </a>
+                <a href=""class="col">
+                    <div class="col-flex">
+                        <img src="images/stripe.png" alt="stripe">
+                        <div class="text">
+                            <h5>Credit card</h5>
+                           <p> Without commission</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="pay">
+            <h4>E-Wallet</h4>
+            <div class="flex-pay">
+                <a href="" class="col">
+                    <div class="col-flex">
+                        <img src="images/Paystack Icon.png" alt="paystack">
+                        <div class="text">
+                            <h5>Paystack</h5>
+                            <p> Without commission</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="col">
+                    <div class="col-flex">
+                        <img src="images/swift.png" rel="swift">
+                        <div class="text">
+                            <h5>Swift</h5>
+                            <p> +15% commission</p>
+                        </div>
+                    </div>
+                </a>
+               
+                <a href="" class="col">
+                    <div class="col-flex">
+                        <img src="images/maestro.png" rel="maest">
+                        <div class="text">
+                            <h5>Maestro</h5>
+                            <p> Without commission</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="pay">
+            <h4>Cryptocurrency</h4>
+            <div class="flex-pay">
+                <a href="" class="col">
+                    <div class="col-flex">
+                        <img src="images/Currency=Binance Coin (BNB).png" rel="BNB">
+                        <div class="text">
+                            <h5>BNB</h5>
+                            <p> +15% commission</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="col">
+                    <div class="col-flex">
+                        <img src="images/Currency=Bitcoin Cash.png" rel="bitcoin">
+                        <div class="text">
+                            <h5>Bitcoin</h5>
+                             <p> +15% commission</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="col">
+                    <div class="col-flex">
+                        <img src="images/Currency=Dogecoin (DOGE).png" rel="doge">
+                        <div class="text">
+                            <h5>Dogecoin</h5>
+                            <p> +15% commission</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="script/index.js"></script>
+</body>
+</html>

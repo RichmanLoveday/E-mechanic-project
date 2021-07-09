@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Lato:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.like {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    
+}
+.like p {
+    margin-top: 20px;
+}
+.like h1 {
+    margin-top: 10px;
+}
+.like .like-image {
+    background: #4A86f8;
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+
+.like img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

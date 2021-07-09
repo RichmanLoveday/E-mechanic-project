@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="header/header.css">
+    <link rel="stylesheet" href="location1.css">
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="header_footer_responsice.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity=
+        "sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=
+        "anonymous" /> 
+    <script src="index.js"></script>
+    <title>E-mechanics</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo_nav flex-header">
+                <div class="left_side">
+                    <div class="image col1">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <div class="col2">
+                        <ul>
+                            <li><a href="#">How it Works</a></li>
+                            <li><a href="#">Fleet</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">FaQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="right_side">
+                            <ul>
+                                <li class="underline"><a href="mechanic_page.html">Join as mechanic</a></li>
+                                    <li class="underline"><a href="signup_page.html">Sign Up</a></li>
+                                    <li class="active"><a href="signin_page.html">Log in</a></li>
+                            </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!---Side menu for a smaller screen-->
+    <div id="side-menu" class="menu">
+        <ul>
+            <li><a href="#" class="menu-close" onclick="CloseSideMenu()">&times;</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Fleet</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">FaQs</a></li>
+        </ul>
+    </div>
+    <main class="main-container">
+        <div class="menu-open">
+            <i class="fa fa-bars menu-open"  onclick="OpenSideMenu()"></i>
+        </div>
+        <div class = "hero">
+            <p class = "hero-text">Where are you?</p>
+            <p class="sub-text">input your location and we instantly connect you to a nearby mechanic that will have your back in no time</p>
+        </div>
+
+        <div class="links">
+            <a href="geolocation_page.html" class = "btn btn-primary">set Automatically</a>
+            <a href="location2_page.html" class = "btn">Input Location manually</a>
+        </div>
+    </main>
+    <script src="script/index.js"></script> 
+</body>
+</html>

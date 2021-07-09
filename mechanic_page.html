@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="stylesheet" href="mechanic.css">
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="header_footer_responsice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity=
+    "sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=
+    "anonymous" />  
+    <script src="script/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo_nav flex-header">
+                <div class="left_side">
+                    <div class="image col1">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <div class="col2">
+                        <ul>
+                            <li><a href="#">How it Works</a></li>
+                            <li><a href="#">Fleet</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">FaQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="right_side">
+                            <ul>
+                                <li class="underline"><a href="mechanic_page.html">Join as mechanic</a></li>
+                                <li class="underline"><a href="signup_page.html">Sign Up</a></li>
+                                <li class="active"><a href="signin_page.html">Log in</a></li>
+                            </ul>
+                            <div class="menu-open">
+                                <i class="fa fa-bars menu-open"  onclick="OpenSideMenu()"></i>
+                            </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!---Side menu for a smaller screen-->
+
+    <section class="wrapper">
+        <section id="side-menu" class="menu">
+            <ul>
+                <li><a href="#" class="menu-close" onclick="CloseSideMenu()">&times;</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Fleet</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">FaQs</a></li>
+            </ul>
+        </section>
+        
+        <section class="bg">
+            <section class="cont flexer">
+                <div class="coltwo">
+                    <h2>Professional Automotive Techinicians!</h2>
+                    <p>Be Your own Boss & Join the #1 Remote Mechanic Company Worldwide.</p>
+                    <div class="vid">
+                        <img class="bottom-image" src="images/E-mech 2 1.png" alt="">
+                        <img class="top-image" src="images/bi_play-btn-fill.png" alt="">
+                    </div>
+                    <div class="upper-flexer">
+                        <div class="whyjoin">
+                            <h3>CHOOSE WHEN AVAILABLE</h3>
+                            <p>You can work in the morning, weekend, full time--you decide when you want to work.</p>
+
+                        </div>
+                        <div class="whyjoin">
+                            <h3>PAYMENT SECURED</h3>
+                            <p>Every payment is secured. No more worries of negotiation with customers</p>
+                            
+                        </div>
+                        <div class="whyjoin">
+                            <h3>BE YOUR OWN BOSS</h3>
+                            <p>You choose who nearby to work for and when to work. No politics or managers!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <form class="joinmech" action="">
+                        <h3>Apply Now!</h3>
+                        <p>Fill out this brief form to get started.</p>
+                        <input id="name" name="name" type="text" placeholder="Name">
+                        <input type="text" name="mail" id="mail" placeholder="Email Address">
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                        <input type="text" name="location" id="location" placeholder="Location" >
+                        <select name="platform" id="platform" >
+                            <option value="holder" selected disabled>How did you hear about us?</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Website">website</option>
+                            <option value="others">others</option>
+                        </select>
+                        <button id="submit">APPLY NOW</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+        <section class="cont col3">
+            <h2>Why are thousands  of mechanics Joining us?</h2>
+            <div class="flex3"> 
+                <div class="reasons" >
+                    <img src="images/Mechanical Setting.png" alt="">
+                    <h3>YOU ONLY DO WHAT YOU LOVE</h3>
+                    <p>We handle the marketing, booking appointments, delivering parts, buying insurance and providing support. You do what you love- fixing cars. We handle the rest.</p>
+                </div>
+                <div class="reasons">
+                    <img src="images/Rating.png" alt="">
+                    <h3>RATINGS ARE VALUABLES</h3>
+                    <p>Every remark counts. This system helps to identify top talents and skilled mechanics. They are usually rewarded with awards and recognition. Every mechanic is expected to deliver the best service possible.</p>
+                </div>
+                <div class="reasons">
+                    <img src="images/Schedule.png" alt="">
+                    <h3>PLAN YOUR SCHEDULE</h3>
+                    <p>A day per week? 3 days a week? Just afternoons? Weekdays only? You have total control. You can simplly set available hours.</p>
+
+                </div>
+                <div class="reasons">
+                    <img src="images/Handshake.png" alt="">
+                    <h3>FAIR PLAY</h3>
+                    <p>Our mechanics make up to $60 an hour based on their location, skills and work experience. We pay flat rate and we don’t do any warranty work, You get paid fairly. Read more here.</p>
+                </div>
+                <div class="reasons">
+                    <img src="images/fluent_gauge-24-filled.png" alt="">
+                    <h3>NO COMPLEX JOBS</h3>
+                    <p>We focus on helping nearby car users get out of the road stranded. We do basic repair and maintenance work, brakes, tire rotations, belts, service, etc. No engine overhauls or major transmission work. Such work will be what we call special jobs.</p>
+                </div>
+                <div class="reasons">
+                    <img src="images/Trophy.png" alt="">
+                    <h3>EVERYONE WINS</h3>
+                    <p>When you work directly with car owners in your neighborhood, you can make more money with no commute. Plus, car owners enjoy the convenience. Everyone wins!</p>
+                </div>
+            </div>
+            <button class="btn" id="form">APPLY NOW!</button>
+        </section>
+        <section class="cont col4">
+            <div class="mechanics">
+                <h2>What are mechanics saying?</h2>
+                <div class="outermech">
+                    <div class="mechanic">
+                        <div class="innermech">
+                            <img src="images/Group 134.png" alt="">
+                            <div class="mech">
+                                <h4>ADE T.</h4>
+                                <h6>Working with E-mechanic since 2019</h6>
+                            </div>
+                        </div>
+                        <p>“What I like best is the freedom and flexibility with my schedule. Helping car users that are stranded on the road gives me joy. Meeting cutomersis fun. I like chatting with them and seeing their face when the car is repaired and they don’t have to waste time at repair facility.”</p>
+                    </div>
+                    <div class="mechanic">
+                        <div class="innermech">
+                            <img src="images/Group 135.png" alt="">
+                            <div class="mech">
+                                <h4>BOLAJI W.</h4>
+                                <h6>Working with E-mechanic since 2019</h6>
+                            </div>
+                            
+                        </div>
+                        <p>“I love working according to my schedule. I set the days and time I am available. Also I love joining for scheduled regular servicing, I love the fact I can focus on the car issues and E-mechanics take care of the customer billing. That way I can deliver a dedicated job.”</p>
+                    </div>
+                    <div class="mechanic">
+                        <div class="innermech">
+                            <img src="images/Group 136.png" alt="">
+                            <div class="mech">
+                                <h4>TAJUDEEN D.</h4>
+                                <h6>Working with E-mechanic since 2018</h6>
+                            </div>
+                        </div>
+                        <p>“I like everything about E-Mechanic. There’s no middle man messing everything up. I get to have direct contact with my clients, leaving no room for miscommunication. The website is precise and simple to use. Everyone here is very helpful.”</p>
+                    </div>
+                    <div class="mechanic">
+                        <div class="innermech">
+                            <img src="images/Group 137.png" alt="">
+                            <div class="mech">
+                                <h4>SULIEMAN O.</h4>
+                                <h6>Working with E-mechanic since 2019</h6>
+                            </div>
+                            
+                        </div>
+                        <p>“For most of us, getting a certified and professional mechanic when our cars break down could be difficult. E-mechanics as made it very easy for professionals like us to render assistance to car users nearby. I had never considered mobile mechanic before, but within days of signing up, I fell in love with this job. I make great pay, I am my own boss and I love working with customers directly. The whole experience bosted my confidence and career. The company is growing rapidly and they truly care about all technicians.”</p>
+                    </div>
+                </div>
+                <button class="btn">Apply Now!</button>
+            </div>
+            <div class="img-aside">
+                <img src="images/Fy72qZAKuxM.png" alt="" width="95%" height="95%">
+            </div>
+        </section>
+        <section class="wide">
+            <section class="cont col5" >
+                <h2>Joining E-Mechanic is as easy as 1-2-3</h2>
+                <hr>
+                <div class="count">
+                    <p class="countpos ds1">1</p>
+                    <p class="countpos ds2">2</p>
+                    <p class="countpos ds3">3</p>
+                </div>
+    
+                <div class="joining">
+                    <div class="joinchild">
+                        <h3>EASY ONLINE APPLICATION</h3>
+                        <p>It takes less than 10 minutes to fill out the entire application. If you have questions, or need help, call us at +234 903 555 8888</p>
+                    </div>
+                    <div class="joinchild">
+                        <h3>PHONE INTERVIEW & ONBOARDING</h3>
+                        <p>A service advisor will call you to interview you and provide more informaation with how E-mechanic works.</p>
+                    </div>
+                    <div class="joinchild">
+                        <h3>START WORKING</h3>
+                        <p>Make money based on your skills, experience and avaliability. Set your own hours.</p>
+                    </div>
+                </div>
+                <button id="form" class="btn">Apply Now!</button>
+            </section>
+        </section>
+        
+        <section class="cont col6">
+            <h2>More About E-Mechanic</h2>
+            <h4>We offer flexible hours, great pay and freedom to be your own boss.
+                We are growing fast -- our mechanics serve thousands of customers each month in over 1,000 cities. Join us today!</h4>
+            <div class="more">
+                <div class="morechild">
+                    <img src="images/People.png" alt="" >
+                    <h3>1,500,000+</h3>
+                    <p>More than 1.5 million people visit E-mechanic.com every month.</p>
+                </div>
+                <div class="morechild">
+                    <img src="images/Desktop.png" alt="" >
+                    <h3>1,000+</h3>
+                    <p>Over 1,000 mechanics work with us in 20+ states</p>
+                </div>
+                <div class="morechild">
+                    <img src="images/steering wheel.png" alt="" >
+                    <h3>Local Transport</h3>
+                    <p>We work with local transport companies in different states.</p>
+                </div>
+                
+            </div>
+            <button id="form" class="btn">Apply Now!</button>
+        </section>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="flex-footer">
+                <div class="logo_links col">
+                    <div class="logo">
+                        <img src="images/logo2.png" alt="logo">
+                        <p>
+                            Block 23, Tunde Anjous Avenue, Lekki Phase1, Lagos, Nigeria
+                        </p>
+                    </div>
+                    <div class="social_links">
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                       
+                    </div>
+                </div>
+                <div class="col">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li><a href="#">Payment & Tax</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Your account</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Our Company</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Subscribe News</h2>
+                    <div class="news-letter">
+                        <input type="text" placeholder="Email address">
+                        <div class="send">
+                            <img src="images/send.png" alt="send_button">
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#">info@emechanics.com</a></li>
+                        <li><a href="#">+234-567-891-2345</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Lato:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.logo_nav .right_side {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.payment_method .container {
+    width: 95%;
+    margin: auto;;
+}
+
+.payment_method_head {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.payment_method .payment_method_head h4 {
+    font-size: 30px;
+    font-family: 'lato', sans-serif;
+}
+
+.payment_method .payment_method_head h5 {
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: 'lato', sans-serif;
+    opacity: 0.5;
+}
+
+.payment_method .pay h4 {
+    font-size: 20px;
+    font-family: 'lato', sans-serif;
+    padding: 10px;
+}
+
+.payment_method .pay .flex-pay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.payment_method .pay  .flex-pay .col {
+    border:  1.8px solid #000;
+    border-radius: 15px;
+    flex-basis: 30%;
+    padding: 10px;
+    transition: 0.1s ease-in;
+    font-family: 'lato', sans-serif;
+    
+}
+
+.payment_method .pay  .flex-pay .col:hover {
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+.payment_method .col-flex {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.payment_method .col-flex img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+    .payment_method .pay .flex-pay {
+        flex-wrap: wrap;
+    }
+    .payment_method .pay  .flex-pay .col {
+        flex-basis: 100%;
+        margin-top: 15px;
+    }
+    
+}
