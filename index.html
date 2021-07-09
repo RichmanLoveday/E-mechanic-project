@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>e-mechanics</title>
+        <link rel="stylesheet" href="e-mechanic_landing_page.css">
+        <link rel="stylesheet" href="e-mechnanic_landing_page_responsive.css">
+        <link rel="stylesheet" href="animation.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity=
+        "sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=
+        "anonymous" />  
+   
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo_nav flex-header">
+                    <div class="left_side">
+                        <div class="image col1">
+                            <img src="images/logo.png" alt="logo">
+                        </div>
+                        <div class="col2">
+                            <ul>
+                                <li><a href="#">How it Works</a></li>
+                                <li><a href="#">Fleet</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">FaQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <nav class="right_side">
+                                <ul>
+                                    <li class="underline"><a href="mechanic_page.html">Join as mechanic</a></li>
+                                    <li class="underline"><a href="signup_page.html">Sign Up</a></li>
+                                    <li class="active"><a href="signin_page.html">Log in</a></li>
+                                </ul>
+                                <div class="menu-open">
+                                    <i class="fa fa-bars menu-open"  onclick="OpenSideMenu()"></i>
+                                </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!---Side menu for a smaller screen-->
+        <div id="side-menu" class="menu">
+            <ul>
+                <li><a href="#" class="menu-close" onclick="CloseSideMenu()">&times;</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Fleet</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">FaQs</a></li>
+            </ul>
+        </div>
+
+        <section class="showcase">
+            <div class="container">
+                <div class="text">
+                    <h1 class="animate-fade-slide-left show-on-scroll">Find A mechanic near you <br> without stress</h1>
+                    <p class="animate-fade-slide-down show-on-scroll">With skilled mechanics, our trobuleshooting means no <br> trouble to you.</p>
+                    <p class="animate-fade-slide-down show-on-scroll">Passion.Performance.Speed.is as well we deliver</p>
+                </div>
+                <a href="signin_page.html"><button class="animate-opacity show-on-scroll" style="animation-delay: 1.5s;">Let's Get started</button></a>
+                <div class="arrow animate-fade-slide-up show-on-scroll">
+                    <p>LEARN MORE</p>
+                    <img src="images/arrowdown.png" class="animate-pulse show-on-scroll" alt="arrow">
+                </div>
+            </div>
+        </section>
+
+        <section class="started">
+            <h1 style="text-align: center; color: #4A86f8; font-size: 40px; margin-top: 20px;">How it works ?</h1>
+            <div class="container">
+                <div class="started-flex">
+                    <div class="col col-img animate-fade-slide-left show-on-scroll">
+                        <img src="images/smartphone.png" alt="device">
+                    </div>
+                    <div class="col text-col" style="text-align: left; padding: 10px;">
+                        <h1 class="animate-fade-slide-right show-on-scroll">Login</h1>
+                        <p class="animate-fade-slide-right show-on-scroll"> Login or Signup with your email or facebook if
+                            you are new to this page</p>
+                            <div class="arshdots">
+                                <img src="images/arshdot.png" class="left animate-opacity show-on-scroll" alt="">
+                                <img src="images/arshdot.png" class="left animate-opacity show-on-scroll" alt="">
+                                <img src="images/arshdot.png" class="left animate-opacity show-on-scroll" alt=""> 
+                                <img src="images/arshdot.png" class="left animate-opacity show-on-scroll" alt="">
+                            </div>
+                    </div>
+                    <div class="small_circle_left_top animate-opacity show-on-scroll"><img src="images/circle2.png" alt=""></div>
+                    <div class="large_circle_left_top animate-opacity show-on-scroll"><img src="images/cirlce1.png" alt=""></div>
+                    <div class="dots_left_top animate-opacity show-on-scroll"><img src="images/dots1.png" alt=""></div>
+                </div>
+
+                <div class="started-flex">
+                    <div class="col text-col" style="text-align: right; padding: 10px">
+                        <h1 class="animate-fade-slide-left show-on-scroll">Tell Us what's<br> wrong</h1>
+                        <p class="animate-fade-slide-left show-on-scroll">We have tailored our services<br>
+                            around what our community<br>
+                            needs. E- is an excellent choice for<br>
+                            European Vehicles, Diesel Trucks,<br>
+                            Mercedes Sprinter Vans as well as<br>
+                            all Domestic Vehicles.
+                        </p>
+                        <div class="arshdots">
+                            <img src="images/arshdot.png" class="right animate-opacity show-on-scroll" alt="">
+                            <img src="images/arshdot.png" class="right animate-opacity show-on-scroll" alt="">
+                            <img src="images/arshdot.png" class="right animate-opacity show-on-scroll" alt="">
+                            <img src="images/arshdot.png" class="right animate-opacity show-on-scroll" alt="">
+                        </div>
+                    </div>
+                    <div class="col col-img animate-fade-slide-right show-on-scroll">
+                        <img src="images/brokedown.jpg" alt="brokedown">
+                    </div>
+                    <div class="dots_right_top animate-opacity show-on-scroll"><img src="images/dots2.png" alt=""></div>
+                    <div class="small_circle_right_top animate-opacity show-on-scroll"><img src="images/circle2.png" alt=""></div>
+                    <div class="medium_circle_right_top animate-opacity show-on-scroll"><img src="images/circle3.png" alt=""></div>
+                </div>
+
+                <div class="started-flex">
+                    <div class="col col-img animate-fade-slide-left show-on-scroll">
+                        <img src="images/solution.png" alt="sitback">
+                    </div>
+                    <div class="col text-col" style="text-align: left; padding: 10px;">
+                        <h1 class="animate-fade-slide-right show-on-scroll">Sit back, relax as we come right to your location</h1>
+                        <p class="animate-fade-slide-right show-on-scroll">
+                            We have designed this page to make sure
+                            there is a auto mechanic close to your
+                            location. In no time, they will be there to assist
+                            you.
+                        </p>
+                        <div class="arshdots">
+                            <img src="images/arshdot.png" class="left animate-opacity show-on-scroll" alt="">
+                            <img src="images/arshdot.png" class="left animate-opacity show-on-scroll" alt="">
+                            <img src="images/arshdot.png" class="left animate-opacity show-on-scroll" alt="">
+                            <img src="images/arshdot.png" class="left animate-opacity show-on-scroll" alt="">
+                        </div>
+                    </div>
+                    <div class="small_circle_left_bottom animate-opacity show-on-scroll"><img src="images/circle2.png" alt=""></div>
+                    <div class="large_circle_left_bottom animate-opacity show-on-scroll"><img src="images/cirlce1.png" alt=""></div>
+                    <div class="dots_left_bottom animate-opacity show-on-scroll"><img src="images/dots1.png" alt=""></div>
+                </div>
+
+                <div class="started-flex">
+                    <div class="col text-col" style="text-align: right; padding: 10px">
+                        <h1 class="animate-fade-slide-left show-on-scroll">We offer fair and transparent pricing</h1>
+                        <p class="animate-fade-slide-left show-on-scroll">Our prices are fair, so you don’t pay more than
+                            needed for good quality. We beieve in
+                            transparrency from repairs to servicing.</p>
+                    </div>
+                    <div class="col col-img animate-fade-slide-right show-on-scroll">
+                        <img src="images/money.jpg" alt="currency">
+                    </div> 
+                    <div class="dots_right_bottom animate-opacity show-on-scroll"><img src="images/dots2.png" alt=""></div>
+                    <div class="small_circle_right_bottom animate-opacity show-on-scroll"><img src="images/circle2.png" alt=""></div>
+                    <div class="medium_circle_right_bottom animate-opacity show-on-scroll"><img src="images/circle3.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="choose">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave-top">
+                <path fill="#ffff" fill-opacity="1" d="M0,192L120,181.3C240,171,480,149,720,149.3C960,149,1200,171,1320,181.3L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+              </svg>
+            <div class="container">
+                <div class="flex-choose">
+                    <div class="col col-1">
+                        <h1 class="animate-fade-slide-down show-on-scroll">Why Choose us ?</h1>
+                        <p class="animate-fade-slide-down show-on-scroll">We have tailored our services around what our
+                            community needs. E-Mechanics is an excellent
+                            choice for Cars, Buses, Diesel Trucks, as well as
+                            all Domestic Vehicles. Our goal is to provide our
+                            customers a unique and positive experience
+                            every time they use our website.
+                        </p>
+                        <div class="logo">
+                            <img src="images/logo3.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="inner-flex animate-opacity show-on-scroll" style="animation-delay: 0.5s;">
+                            <div class="text">
+                            <h1>Save Time</h1>
+                            <p>We know you need your car back as soon as
+                                possible, that’s why we’ve developed an
+                                organized and fluid system that allows you to
+                                get your car as soon as possibe.
+                            </p>
+                            </div>
+                            <div class="icon">
+                                <img src="images/time.png" alt="">
+                            </div>
+                        </div>
+                        <div class="inner-flex animate-opacity show-on-scroll" style="animation-delay: 0.7s;">
+                            <div class="text">
+                                <h1>Experienced Mechanics</h1>
+                            <p>
+                                We believe in giving you the very best service
+                                for auto repair that you can find. That’s why
+                                we seek out and hire the very best auto
+                                mechanics
+                            </p>
+                            </div>
+                            <div class="icon">
+                                <img src="images/mark.png" alt="">
+                            </div>
+                        </div>
+                        <div class="inner-flex animate-opacity show-on-scroll" style="animation-delay: 0.9s;">
+                            <div class="text">
+                                <h1>Trust</h1>
+                            <p>
+                                Your vehicle will be serviced and repaired by
+                                our expert team of experienced and friendly
+                                technicians every time. You can bank on them
+                                to give you the best job you can ever get.
+                            </p>
+                            </div>
+                            <div class="icon">
+                                <img src="images/like3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave-bottom">
+                <path fill="#ffff" fill-opacity="1" d="M0,192L120,181.3C240,171,480,149,720,149.3C960,149,1200,171,1320,181.3L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+              </svg>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h1 style="color: #4A86f8; font-family: 'DM Sans', sans-serif; margin-top: 30px; padding: 10px;">Our Services</h1>
+                <div class="services-flex">
+                    <div class="col col-flex animate-fade-slide-left show-on-scroll" style="animation-delay: 0.2s; opacity: 0;">
+                        <div class="text">
+                            <h1>Certified Mechanics</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Habitant risus tristique nec
+                                nunc diam, vulputate sed.
+                            </p>
+                        </div>
+                        <div class="image">
+                            <img src="images/settings.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="col col-flex animate-opacity show-on-scroll" style="opacity: 0; animation-delay: 0.3s;">
+                        <div class="text">
+                            <h1>Geo Location</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Habitant risus tristique nec
+                                nunc diam, vulputate sed.
+                            </p>
+                        </div>
+                        <div class="image">
+                            <img src="images/location.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="col col-flex animate-fade-slide-right show-on-scroll" style="animation-delay: 0.4s; opacity: 0;">
+                        <div class="text">
+                            <h1>Call Functionality</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Habitant risus tristique nec
+                                nunc diam, vulputate sed.
+                            </p>
+                        </div>
+                        <div class="image">
+                            <img src="images/call.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="col col-flex animate-fade-slide-left show-on-scroll" style="animation-delay: 0.6s; opacity: 0;">
+                        <div class="text">
+                            <h1>Wallet</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Habitant risus tristique nec
+                                nunc diam, vulputate sed.
+                            </p>
+                        </div>
+                        <div class="image">
+                            <img src="images/fill.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="col col-flex animate-opacity show-on-scroll" style="opacity: 0; animation-delay: 0.7s;">
+                        <div class="text">
+                            <h1>Online Payment</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Habitant risus tristique nec
+                                nunc diam, vulputate sed.
+                            </p>
+                        </div>
+                        <div class="image">
+                            <img src="images/fill.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="col col-flex animate-fade-slide-right show-on-scroll" style="animation-delay: 0.8s; opacity: 0;">
+                        <div class="text">
+                            <h1>Car Maintenance</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Habitant risus tristique nec
+                                nunc diam, vulputate sed.
+                            </p>
+                        </div>
+                        <div class="image">
+                            <img src="images/note.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+           
+        <section class="my_slide">
+            <div class="container">
+                <h1 style="text-align: center; color: #4A86f8; margin-bottom: 0px; font-family: 'DM Sans', sans-serif;">What our clients say</h1>
+                <div id="slider">
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    <input type="radio" name="slider" id="slide4">
+                    <div id="slides">
+                       <div id="overflow">
+                          <div class="inner">
+                             <div class="slide slide_1">
+                                <div class="slide-content">
+                                    <img src="images/comment.png" alt="">
+                                   <h2>Jack Dorsey</h2>
+                                   <p>Your vehicle will be serviced and repaired by
+                                    our expert team of experienced and friendly
+                                    technicians every time. You can bank on them
+                                    to give you the best job you can ever get.
+                                </p>
+                                </div>
+                             </div>
+                             <div class="slide slide_2">
+                                <div class="slide-content">
+                                    <img src="images/comment.png" alt="">
+                                   <h2>Jack Dorsey</h2>
+                                   <p>Your vehicle will be serviced and repaired by
+                                    our expert team of experienced and friendly
+                                    technicians every time. You can bank on them
+                                    to give you the best job you can ever get.</p>
+                                </div>
+                             </div>
+                             <div class="slide slide_3">
+                                <div class="slide-content">
+                                    <img src="images/comment.png" alt="">
+                                   <h2>Jack Dorsey</h2>
+                                   <p>Your vehicle will be serviced and repaired by
+                                    our expert team of experienced and friendly
+                                    technicians every time. You can bank on them
+                                    to give you the best job you can ever get.</p>
+                                </div>
+                             </div>
+                             <div class="slide slide_4">
+                                <div class="slide-content">
+                                    <img src="images/comment.png" alt="">
+                                   <h2>Jack Dorsey</h2>
+                                   <p>Your vehicle will be serviced and repaired by
+                                    our expert team of experienced and friendly
+                                    technicians every time. You can bank on them
+                                    to give you the best job you can ever get.</p>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div id="controls">
+                       <label for="slide1"></label>
+                       <label for="slide2"></label>
+                       <label for="slide3"></label>
+                       <label for="slide4"></label>
+                    </div>
+                    <div id="bullets">
+                       <label for="slide1"></label>
+                       <label for="slide2"></label>
+                       <label for="slide3"></label>
+                       <label for="slide4"></label>
+                    </div>
+                 </div>
+            </div>
+        </section>
+    
+
+        <section class="small-showcase">
+            <div class="container flex-small-showcase">
+                <div class="text">
+                    <h1 class="animate-fade-slide-left show-on-scroll">
+                        We have tailored our services around our client needs. <br>
+                        E-Mechanics is definitely an excellent choice for you.
+                    </h1>
+                </div>
+
+                <div class="my-btn animate-fade-slide-right show-on-scroll">
+                    <a href="signin_page.html"><button>Book a mechanic now!</button></a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container animate-opacity show-on-scroll" style="opacity: 0;">
+                <div class="flex-footer">
+                    <div class="logo_links col">
+                        <div class="logo">
+                            <img src="images/logo2.png" alt="logo">
+                            <p>
+                                Block 23, Tunde Anjous Avenue, Lekki Phase1, Lagos, Nigeria
+                            </p>
+                        </div>
+                        <div class="social_links">
+                            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h2>Useful Links</h2>
+                        <ul>
+                            <li><a href="#">Payment & Tax</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Your account</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h2>Our Company</h2>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Media</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h2>Subscribe News</h2>
+                        <div class="news-letter">
+                            <input type="text" placeholder="Email address">
+                            <div class="send">
+                                <img src="images/send.png" alt="send_button">
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="#">info@emechanics.com</a></li>
+                            <li><a href="#">+234-567-891-2345</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="script/index.js"></script>
+</html>

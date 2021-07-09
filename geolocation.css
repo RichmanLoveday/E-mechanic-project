@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Lato:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    padding: 5px 10px 5px 10px;
+}
+
+.move {
+    padding-top: 70px;  
+}
+
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.flex-header i {
+    font-size: 30px;
+    color: #4A86f8;
+    display: none;
+}
+
+.logo_nav .col {
+    flex: 1;
+}
+
+.logo_nav .left_side {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.logo_nav .left_side ul {
+    list-style: none;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.logo_nav .left_side ul li {
+    display: inline-block;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.logo_nav .left_side ul li::after {
+    content: ' ';
+    position: relative;
+    width: 0;
+    height: 2px;
+    top: 5px;
+    background-color: #4A86f8;
+    bottom: 0;
+    margin: auto;
+    display: block;
+}
+
+.logo_nav .left_side ul li:hover::after {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.logo_nav .left_side ul li a {
+    padding: 5px;
+    color: #616060;
+    font-weight: 700;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.logo_nav .right_side ul {
+    list-style: none;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.logo_nav .right_side ul li a {
+    padding: 5px;
+    color: #616060;
+    font-weight: 700;
+    font-size: 13px;
+    opacity: 0.9;
+}
+.logo_nav .right_side ul li {
+    display: inline-block;
+    padding: 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo_nav ul li.active {
+    background: #4A86f8;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+.logo_nav ul .underline::after {
+    content: ' ';
+    position: relative;
+    width: 0;
+    height: 2px;
+    top: 5px;
+    background-color: #4A86f8;
+    bottom: 0;
+    margin: auto;
+    display: block;
+}
+
+.logo_nav .underline:hover::after {
+    width: 100%;
+    transition: 0.3s;
+}
+.logo_nav ul li a {
+    padding: 5px;
+    color: #616060;
+    font-weight: 500;
+}
+
+.logo_nav ul li.active a{
+    color: #ffff;
+    opacity: 1;
+    padding: 10px
+}
+
+
+
+/*Style sheet for the side menu*/
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 200;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.3s ease-out;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px 10px 10px 30px;
+    font-size: 22px;
+    display: block;
+    font-weight: bold;
+    color: lightgray;
+    transition: 0.5s ease-out;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.menu ul li:nth-child(1) {
+    margin-top: 50px;
+}
+
+
+.menu a:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #4A86f8;
+}
+
+.menu .menu-close {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    margin-left: 0px;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+/*Styling the main section for the mechanic's details  */
+
+.mechanics-and-map{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#map{
+    height: 180vh;
+    width: 50%;
+    padding-top: 5rem;
+}
+
+
+.mech{
+    width: 50%;
+    padding: 5rem 0 5rem 0;
+}
+.mech-head{
+    margin: 3rem 0 0 4rem ;
+    font-size: 2.5rem;
+}
+
+.mech-para{
+    margin: 1rem 0 1rem 4rem ;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.mech__row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 4rem .6rem .6rem .6rem;
+    position: relative;
+}
+
+
+.mech__row::before{
+    content: "";
+    position: absolute;
+    left: 3rem;
+    top: -2rem;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid rgb(216, 213, 213);
+   
+} 
+
+.last::after{
+    content: "";
+    position: absolute;
+    left: 3rem;
+    top: 18rem;
+    width: 88%;
+    border-bottom: 1px solid rgb(216, 213, 213);
+}  
+
+.mech__img{
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+    margin: 2rem auto;
+}
+
+
+.mech__location{
+    display: flex;
+}
+
+.mech__rating{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.mech__btn{
+    background-color: #4A86f8;
+    color: white;
+    outline: none;
+    border: none;
+    width: 10rem;
+    padding: .9rem .5rem .9rem 1rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 2rem;
+    margin: auto;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+article{
+    margin: 2rem auto 0 0rem;
+}
+
+article p{
+    font-size: .9rem;
+    font-weight: 600;
+    padding-top: .4rem;
+}
+
+article h4{
+    padding-top: .2rem;
+    font-size: 1.5rem;
+}
+
+.marker,
+.star{
+    width: 1rem;
+    height: 1rem;
+    margin: .4rem .2rem 0 0;
+}
+
+
+.arrow{
+    padding: 0 0 0 .8rem;
+    height: 1.3rem;
+}
+.progress-container{
+    text-align: center;
+    display: inline;
+    order: 1;
+}
+
+.progress__container__inner{
+    display: flex;
+    margin: 150px auto 0 auto;
+    justify-content: center;
+    position: relative;
+    min-width: 100%;
+
+}
+
+.next,
+.prev{
+    font-size: 1.7rem;
+    color: #616060;
+    cursor: pointer;
+}
+
+.circle{
+    color: #616060;
+    margin: .5rem 1.5rem 0 1.5rem ;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.active_circle{
+    background-color: #4A86f8;
+    color: #FFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .1rem;
+    padding: .8rem;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES*/
+
+ @media screen  and (max-width: 1050px){
+    .mech__btn{
+        background-color: #4A86f8;
+        color: white;
+        outline: none;
+        border: none;
+        width: 9rem;
+        padding: .7rem 0 .7rem 1rem;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        border-radius: 1.4rem;
+        margin: 0 auto;
+        margin-bottom: 4rem; 
+    }
+    .mech__row::before{
+        display: none;
+       
+    } 
+    
+    .last::after{
+   display: none;
+    }  
+
+}
+
+
+
+@media screen  and (max-width: 800px){
+    
+    .mechanics-and-map{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .mech{
+        margin-right: auto;
+        margin-left: auto;
+        order: 1;
+    }
+    
+    #map{
+        margin: 0 auto;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .mech-head{
+        margin: 2rem;
+        font-size: 1.3rem;
+    }
+    
+    .mech-para{
+        margin: 1rem 0 1rem 2rem ;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+
+    .mech__img{
+        border-radius: 50%;
+        width: 6rem;
+        height: 6rem;
+        margin: 1rem auto;
+    }
+
+    .mech__btn{
+        font-size: .8rem;
+        background-color: #4A86f8;
+        color: white;
+        outline: none;
+        border: none;
+        width: 9rem;
+        padding: .5rem 0 .5rem .5rem;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        border-radius: 1.4rem;
+        margin: 2.5rem auto 1.5rem auto;  
+    }
+
+    .mech__row::before{
+        display: none;
+       
+    } 
+    
+    .last::after{
+   display: none;
+    }  
+
+} 
+
+
+
+footer {
+    background-color: #1A4FB1;
+    margin-top:5rem;
+}
+
+footer .flex-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+footer .flex-footer .col {
+    width: 20%;
+}
+
+footer .flex-footer i {
+    color: black;;
+    padding: 20px;
+    margin-top: 20px;
+    color:  #FFF;
+}
+
+footer .flex-footer .logo, footer .flex-footer p {
+    font-family: 'Lato', sans-serif;
+    width: 100;
+    font-size: 22px;
+}
+
+footer .flex-footer p {
+    margin-top: 20px;
+    color: #fff;
+}
+
+footer h2 {
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 10px;
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+footer li {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+footer ul li a {
+    font-size: 22px;
+    color: #fff;
+}
+
+footer .news-letter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 130%;
+    margin-top: 10px;
+}
+
+footer input {
+    width: 80%;
+    padding: 7px;
+    outline: none;
+    border: 0;
+}
+
+footer ::placeholder {
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+footer .send {
+    padding: 4px;
+    background-color: #1A4FB1;
+    border-radius: 50%;
+}
+
+footer img {
+    margin-left: 3px;
+    margin-top: 2px;
+}

@@ -1,0 +1,117 @@
+/*This stylesheet was created to handle all my screen sizes,
+to make the web pages responsive */
+
+@media(max-width: 1222px) {
+    .logo_nav .left_side .col2 {
+        display: none;
+    }
+    .logo_nav .right_side ul .underline:nth-child(1) {
+        display: none;
+    }
+    .flex-header i {
+        display: block;
+        margin-left: 2px;
+    }
+    .logo_nav .left_side img {
+        margin-left: 0px;
+    }
+    .logo_nav .left_side {
+        padding: 0;
+        width: 30%;
+        justify-content: space-between;
+    }
+    header .right_side .none {
+        display: none;
+    }
+}
+
+
+@media(max-width: 1024px) {
+    footer .flex-footer {
+        flex-wrap: wrap;
+    }
+    
+    footer .flex-footer .col {
+        width: 50%;
+    }
+    footer .news-letter {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 7px;
+        background-color: #fff;
+        border-radius: 50px;
+        width: 100%;
+        margin-top: 10px;
+    }
+      
+    }
+
+@media(max-width: 812px) {
+        .logo_nav .right_side ul {
+            list-style: none;
+            margin-left: 50px;
+            padding: 0px;
+    }
+}
+
+@media(max-width: 450px) {
+    header .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .logo_nav .left_side img {
+        margin-left: 20%;
+    }
+    .logo_nav .left_side {
+        padding: 0;
+        width: 20%;
+    }
+    .logo_nav .right_side ul li {
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+    footer .container {
+        width: 100%;
+        padding: 0;
+    }
+    footer .flex-footer .col {
+        width: 50%;
+    }
+    footer .flex-footer .logo, footer .flex-footer p {
+        font-size: 15px;
+    }
+    
+    footer .flex-footer p {
+        font-size: 15px;
+    }
+    
+    footer h2 {
+        font-size: 18px;
+    }
+    footer li {
+        padding: 5px;
+        margin: 0;
+    }
+    footer ul li a {
+        font-size: 15px;
+    }
+    
+    footer input {
+        padding: 2px;
+    }
+
+    footer ::placeholder {
+        font-size: 16px;
+    }
+    footer .flex-footer i {
+        color: black;;
+        padding: 5px;
+        margin-top: 20px;
+        color:  #FFF;
+    }
+    footer .news-letter {
+        width: 110%;
+    }
+    
+}

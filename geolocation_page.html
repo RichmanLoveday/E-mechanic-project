@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation</title>
+    <link rel="stylesheet" href="geolocation.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="header_footer_responsice.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js">
+    </script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        /* styling for map */
+        
+        .marker {
+            background-image: url(images/pin.png);
+            background-size: cover;
+            width: 32px;
+            height: 40px;
+            cursor: pointer;
+        }
+        /* .mapboxgl-popup {
+            max-width: 25rem;
+        }
+        
+        .mapboxgl-popup-content {
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            padding: 1.5rem !important;
+            font-size: 1.4rem;
+            -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15) !important;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15) !important;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo_nav flex-header">
+                <div class="left_side">
+                    <div class="image col1">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <div class="col2">
+                        <ul>
+                            <li><a href="#">How it Works</a></li>
+                            <li><a href="#">Fleet</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">FaQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="right_side">
+                            <ul>
+                                <li class="underline"><a href="mechanic_page.html">Join as mechanic</a></li>
+                                <li class="underline"><a href="signup_page.html">Sign Up</a></li>
+                                <li class="active"><a href="signin_page.html">Log in</a></li>
+                            </ul>
+                            <div class="menu-open">
+                                <i class="fa fa-bars menu-open"  onclick="OpenSideMenu()"></i>
+                            </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!---Side menu for a smaller screen-->
+    <section id="side-menu" class="menu">
+        <ul>
+            <li><a href="#" class="menu-close" onclick="CloseSideMenu()">&times;</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Fleet</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">FaQs</a></li>
+        </ul>
+    </section>
+
+    <main>
+        <div class="mechanics-and-map">
+
+
+            <div class="mech">
+                <div class="mech_heading">
+                    <h3 class="mech-head">Mechanics near Surulere</h3>
+                    <p class="mech-para"><strong>15</strong> mechanics found nearby</p>
+                </div>
+
+                <div class="mech__row">
+                    <img src="images/4thinggoodmechanic1-5694 2.png" alt="smiling man" class="mech__img">
+                    <article class="mech__deets">
+                        <h4>Mike Abdul</h4>
+                        <p>Works at Abdul automobile repairs</p>
+                        <div class="mech__location">
+                            <img src="Vector.png" alt="map marker" class="marker">
+                            <p>5, Surulere</p>
+                        </div>
+                        <div class="mech__rating">
+                            <img src="images/Vector (1).png" alt="gold star" class="star">
+                            <p>4.5(13 reviews)</p>
+                        </div>
+                    </article>
+                    <a href="booking_page.html" class="move"><button class="mech__btn">Request Now <img src="images/Stroke 1.png" alt="arrow" class="arrow"></button></a> 
+                </div>
+
+                <div class="mech__row">
+                    <img src="images/4thinggoodmechanic1-5694 2.png" alt="smiling man" class="mech__img">
+                    <article class="mech__deets">
+                        <h4>Mike Abdul</h4>
+                        <p>Works at Abdul automobile repairs</p>
+                        <div class="mech__location">
+                            <img src="Vector.png" alt="map marker" class="marker">
+                            <p>5, Surulere</p>
+                        </div>
+                        <div class="mech__rating">
+                            <img src="images/Vector (1).png" alt="gold star" class="star">
+                            <p>4.5(13 reviews)</p>
+                        </div>
+                    </article>
+                    <a href="booking_page.html" class="move"><button class="mech__btn">Request Now <img src="images/Stroke 1.png" alt="arrow" class="arrow"></button></a> 
+                </div>
+
+                <div class="mech__row last">
+                    <img src="images/4thinggoodmechanic1-5694 2.png" alt="smiling man" class="mech__img">
+                    <article class="mech__deets">
+                        <h4>Mike Abdul</h4>
+                        <p>Works at Abdul automobile repairs</p>
+                        <div class="mech__location">
+                            <img src="Vector.png" alt="map marker" class="marker">
+                            <p>5, Surulere</p>
+                        </div>
+                        <div class="mech__rating">
+                            <img src="images/Vector (1).png" alt="gold star" class="star">
+                            <p>4.5(13 reviews)</p>
+                        </div>
+                    </article>
+                    <a href="booking_page.html" class="move"><button class="mech__btn">Request Now <img src="images/Stroke 1.png" alt="arrow" class="arrow"></button></a> 
+                </div>
+                <div class="progress-container">
+                    <div class="progress__container__inner">
+                        <div class="prev"><i class="fas fa-chevron-left"></i></div>
+                        <div class="circle active_circle">1</div>
+                        <div class="circle ">2</div>
+                        <div class="circle ">3</div>
+                        <div class="circle ">4</div>
+                        <div class="next"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+
+            </div>
+        
+            <div id="map">
+            </div>
+        </div>
+ </main>
+
+
+
+
+
+
+
+ <footer>
+    <div class="container">
+        <div class="flex-footer">
+            <div class="logo_links col">
+                <div class="logo">
+                    <img src="images/logo2.png" alt="logo">
+                    <p>
+                        981 Mission Street #10
+                        San Francisco, CA 94103
+                    </p>
+                </div>
+                <div class="social_links">
+                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                   
+                </div>
+            </div>
+            <div class="col">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="#">Payment & Tax</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Your account</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Our Company</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Subscribe News</h2>
+                <div class="news-letter">
+                    <input type="text" placeholder="Email address">
+                    <div class="send">
+                        <img src="images/send.png" alt="send_button">
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#">info@emechanics.com</a></li>
+                    <li><a href="#">+234-567-891-2345</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="script/geolocation.js"></script>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>e-mechanics</title>
+        <link rel="stylesheet" href="card.css">
+        <link rel="stylesheet" href="header_footer.css">
+        <link rel="stylesheet" href="header_footer_responsice.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity=
+        "sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=
+        "anonymous" />  
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo_nav flex-header">
+                    <div class="left_side">
+                        <div class="image col1">
+                            <img src="images/logo.png" alt="logo">
+                        </div>
+                        <div class="col2">
+                            <ul>
+                                <li><a href="#">How it Works</a></li>
+                                <li><a href="#">Fleet</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">FaQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <nav class="right_side">
+                                <ul>
+                                    <li class="underline"><a href="mechanic_page.html">Join as mechanic</a></li>
+                                    <li class="underline"><a href="signup_page.html">Sign Up</a></li>
+                                    <li class="active"><a href="signin_page.html">Log in</a></li>
+                                </ul>
+                                <div class="menu-open">
+                                    <i class="fa fa-bars menu-open"  onclick="OpenSideMenu()"></i>
+                                </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    
+        <!---Side menu for a smaller screen-->
+        <div id="side-menu" class="menu">
+            <ul>
+                <li><a href="#" class="menu-close" onclick="CloseSideMenu()">&times;</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Fleet</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">FaQs</a></li>
+            </ul>
+        </div>
+
+
+        <section class="payment">
+            <div class="container">
+                <h4>Pay With Credit Card </h4>
+                <div class="payment-flex">
+                    <div class="col1">
+                        <img src="images/Card 4.png" alt="card">
+                    </div>
+                    <div class="col2">
+                        <form>
+                            <div class="inputgroup">
+                                <div class="des1">
+                                    <input type="tel"  placeholder="Card Number"
+                                    pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}">
+                                </div>
+                                <div class="des2">
+                                    <input type="text" placeholder="Cardholder name">
+                                </div>
+                            </div>
+                
+                            <div class="inputgroup2">
+                                <div class="col">
+                                    <input type="month" placeholder="Expiration" min="2017-03" max="2030-03" startdate="0000-00"
+                                     onfocus="(this.type='month')">
+                                </div> 
+                                <div class="col">    
+                                    <input type="tel" placeholder="CVV">
+                                </div>
+                            </div>
+                            <div class="inputgroup3">
+                                <div class="col3">
+                                    <input type="checkbox" name="save card" value="Card" checked>
+                                    <label for="save card"> save card</label>
+                                </div> 
+                                <div class="col4">  
+                                   <a href="sucess.html"><input type="button" value=" PAY " onclick="msg()"> </a>  
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    
+        <script src="script/index.js"></script>
+    </body>
+</html>

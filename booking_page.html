@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="header_footer_responsice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo_nav flex-header">
+                <div class="left_side">
+                    <div class="image col1">
+                        <img src="images/E-mech 1 3.png" alt="logo">
+                    </div>
+                    <div class="col2">
+                        <ul>
+                            <li><a href="#">How it Works</a></li>
+                            <li><a href="#">Fleet</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">FaQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="right_side">
+                            <ul>
+                                <li class="underline"><a href="mechanic_page.html">Join as mechanic</a></li>
+                                    <li class="underline"><a href="signup_page.html">Sign Up</a></li>
+                                    <li class="active"><a href="signin_page.html">Log in</a></li>
+                            </ul>
+                            <div class="menu-open">
+                                <i class="fa fa-bars menu-open"  onclick="OpenSideMenu()"></i>
+                            </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!---Side menu for a smaller screen-->
+    <section id="side-menu" class="menu">
+        <ul>
+            <li><a href="#" class="menu-close" onclick="CloseSideMenu()">&times;</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Fleet</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">FaQs</a></li>
+        </ul>
+    </section>
+    
+    <main class="booking">
+        <h1>Tell us what's wrong</h1>
+        <form action="/" method="GET">
+
+            <label for="problem">State the problem</label><br>
+            <input type="text" name="problem" id="problem" placeholder="e.g car break stopped working"><br>
+
+            <label for="description">Detailed Description of problem</label><br>
+            <textarea name="description" id="" cols="30" rows="8" placeholder="Be as specific as you can on what needs to be repaired"></textarea><br>
+
+            <label for="car-make">Car make</label><br>
+            <input type="text" id="car-make" name="car-make" placeholder="e.g Toyota"><br>
+
+            <label for="year">Year</label><br>
+            <input type="text" id="year" name="year" placeholder="e.g 2018"><br>
+
+            <label for="model">Model</label><br>
+            <input type="text" id="model" name="model" placeholder="e.g Camry, Corolla Sienna"><br>
+
+            <label for="model">Upload SnapShot</label><br>
+            <button class="upload" onclick="document.getElementById('getFile').click()"><i class="fas fa-arrow-up"></i></i>Add image</button><br>
+            <input type='file' id="getFile" style="display:none"><br>
+            
+        </form>
+             <a href="payment_method.html"><button type="submit" class="btn">Continue
+            <img src="images/Stroke 1.png" alt="" class="sub_arrow">
+            </button></a>
+    </main>
+</body>
+<script src="script/index.js"></script>
+</html>
