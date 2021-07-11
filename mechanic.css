@@ -46,7 +46,7 @@ body {
 }
 .coltwo{
     padding: 20px;
-    width: 60%;
+    width: 100%;
 }
 h2{
     padding: 1em 0 0.3em 0;
@@ -69,13 +69,12 @@ button:hover {
 }
 
 .vid{
-    background: url('../Rectangle274.png');
+    background: url(images/Rectangle274.png);
     position: relative;
     width: 300px;
     margin: 2rem auto;
     margin-top: 3rem;
     margin-bottom: 4rem;
-
 }
 
 .bottom-image{
@@ -92,6 +91,7 @@ button:hover {
     padding-top: 2em;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 h3{
@@ -109,6 +109,7 @@ h3{
 .whyjoin{
     width: 200px;
     margin-right: 2rem;
+    
 }
 
 .form{
@@ -391,15 +392,31 @@ hr{
 
 
 @media only screen and (max-width: 900px)  {
-    .flexer{
-         background:linear-gradient(rgba(0, 2, 7, 0.548), rgba(22, 15, 15, 0.555)), url(assets/1siPGNdHnTE.png);
-        
-    }
-
+    
+   
     .vid-cont{
         width: 200px;
     }
+    h2{
+        padding: 0px;
+        font-size: 30px;
+    }
 
+    .coltwo{
+        padding: 5px;
+        padding-top: 80px;
+    }
+
+    .cont h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .cont h3 {
+        font-size: 15px;
+    }
+   
+    
     .bottom-image{
         width: 70%;
         left: 10px;
@@ -442,5 +459,9 @@ hr{
     }
     .coltwo{
         width: 100%;
+    }
+    .whyjoin{
+        width: 100%;
+        
     }
 }

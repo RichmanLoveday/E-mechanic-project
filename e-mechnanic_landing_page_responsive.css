@@ -5,7 +5,7 @@ to make the web pages responsive */
     .logo_nav .left_side .col2 {
         display: none;
     }
-    .logo_nav .right_side ul .underline:nth-child(1) {
+    .logo_nav .right_side ul .underline:nth-child(2) {
         display: none;
     }
     .flex-header i {
@@ -174,12 +174,25 @@ footer .news-letter {
     }
 }
 
+@media(max-width: 750px) {
+    .started .started-flex .dots_right_top {
+        left: 52%;
+    }
+    .started .started-flex .dots_right_bottom {
+        left: 50%;
+    }
+}
+
 
 @media(max-width: 812px) {
     .logo_nav .right_side ul {
         list-style: none;
         margin-left: 50px;
         padding: 0px;
+    }
+    .showcase .text,
+    .showcase button {
+        margin-top: 2%;
     }
 
     .choose .flex-choose {
@@ -360,11 +373,7 @@ footer .news-letter {
 
 
 @media(max-width: 640px) {
-    .showcase .text {
-        margin-top: 5%;
-        padding: 10px 5px 10px 5px;
-        width: 100%;
-    }
+   
     .showcase .text h1 {
         font-size: 26px;
         color: #fff;
@@ -373,15 +382,6 @@ footer .news-letter {
     }
     .showcase button {
         font-size: 15px;
-        margin-bottom: 30px;
-    }
-    .started .started-flex .dots_right_top {
-        right: -30.5%;
-        top: 34%;
-    }
-    .started .started-flex .dots_right_bottom {
-        right: -30.4%;
-        top: 83%;
     }
     .started .started-flex .medium_circle_right_top {
         top: 28.2%;
@@ -394,9 +394,25 @@ footer .news-letter {
 }
 
 @media(max-width: 450px) {
+    .left_side img {
+        width: 100px;
+        height: 70px;
+        margin: 2px;
+    }
+    .showcase {
+        height: 90vh;
+        padding-bottom: 40px;
+    }
+    .showcase .text {
+        margin-top: 20%;
+    }
     header .container {
         width: 100%;
         padding: 10px;
+    }
+    .logo_nav .left_side {
+        padding: 0;
+        width: 20%;
     }
     .logo_nav .left_side img {
         margin-left: 0px;
@@ -645,7 +661,7 @@ footer .news-letter {
     }
     
     .started .started-flex .dots_right_top {
-        right: -37%;
+        left: 56.5%;
         top: 39%;
     }
     
@@ -659,7 +675,7 @@ footer .news-letter {
     }
   
     .started .started-flex .dots_right_bottom {
-        right: -34.5%;
+        left: 52%;
         top: 85%;
     }
     .started .started-flex .small_circle_right_top {
@@ -685,8 +701,8 @@ footer .news-letter {
         top: 36%;
     }
     .started .started-flex .dots_right_bottom {
-        right: -36.5%;
-        top: 86%;
+        left: 52%;
+        top: 85%;
     }
     .started .started-flex .medium_circle_right_top {
         top: 32.5%;
@@ -694,11 +710,6 @@ footer .news-letter {
     .started .started-flex .medium_circle_right_bottom {
         top: 79%;
         right: 0%;
-    }
-    .left_side img {
-        width: 100px;
-        height: 70px;
-        margin: 2px;
     }
     .right_side {
         width: 100%;

@@ -5,12 +5,12 @@ to make the web pages responsive */
     .logo_nav .left_side .col2 {
         display: none;
     }
-    .logo_nav .right_side ul .underline:nth-child(1) {
+    .logo_nav .right_side ul .underline:nth-child(2) {
         display: none;
     }
     .flex-header i {
         display: block;
-        margin-left: 2px;
+        margin-left: 0px;
     }
     .logo_nav .left_side img {
         margin-left: 0px;
@@ -20,11 +20,14 @@ to make the web pages responsive */
         width: 30%;
         justify-content: space-between;
     }
+
+    .logo .right_side {
+        width: 100%;
+    }
     header .right_side .none {
         display: none;
     }
 }
-
 
 @media(max-width: 1024px) {
     footer .flex-footer {
@@ -56,20 +59,35 @@ to make the web pages responsive */
 }
 
 @media(max-width: 450px) {
+    header {
+        padding: 0;
+    }
     header .container {
         width: 100%;
-        padding: 10px;
+        padding: 0px;
+        margin: 0;
     }
     .logo_nav .left_side img {
-        margin-left: 20%;
-    }
-    .logo_nav .left_side {
-        padding: 0;
-        width: 20%;
+        margin-left: 0px;
     }
     .logo_nav .right_side ul li {
         margin-left: 2px;
         margin-right: 5px;
+    }
+    .left_side img {
+        width: 100px;
+        height: 70px;
+        margin: 2px;
+    }
+
+
+    .logo_nav .left_side {
+        padding: 0;
+        width: 20%;
+    }
+    header i {
+        margin-right: 20px;
+        margin-left: 50px;
     }
     footer .container {
         width: 100%;
@@ -115,3 +133,6 @@ to make the web pages responsive */
     }
     
 }
+
+
+

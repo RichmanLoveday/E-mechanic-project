@@ -8,6 +8,12 @@
     font-family: 'DM Sans', sans-serif;
 }
 
+
+
+header {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .container {
     width: 95%;
     margin: auto;
@@ -258,9 +264,14 @@
     display: flex;
 }
 
+
+.mech__location p {
+    margin-left: 10px;
+}
+
 .mech__rating{
     display: flex;
-    margin-top: 2rem;
+    margin-top: 2px;
 }
 
 .mech__btn{
@@ -274,7 +285,6 @@
     align-self: center;
     justify-content: center;
     border-radius: 2rem;
-    margin: auto;
     font-size: 1rem;
     cursor: pointer;
 }
@@ -351,7 +361,7 @@ article h4{
 
 /* MEDIA QUERIES*/
 
- @media screen  and (max-width: 1050px){
+/* @media screen  and (max-width: 1050px){
     .mech__btn{
         background-color: #4A86f8;
         color: white;
@@ -375,12 +385,41 @@ article h4{
    display: none;
     }  
 
+}*/
+
+@media(max-width: 1222px) {
+    .mechanics-and-map{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .mech{
+        width: 95%;
+        padding: 0;
+        margin-top: -10px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .progress__container__inner {
+        padding: 15px;
+    }
+    .mech__btn{
+        margin-right: 30px;
+    }
+    #map{
+        height: 400px;
+        width: 100%;
+        padding-top: 5rem;
+    }
+    .mech_heading {
+        text-align: center;
+    }
 }
 
-
-
-@media screen  and (max-width: 800px){
-    
+@media screen  and (max-width: 830px){
     .mechanics-and-map{
         display: flex;
         flex-wrap: wrap;
@@ -388,7 +427,6 @@ article h4{
         justify-content: center;
         align-content: center;
     }
-
     .mech{
         margin-right: auto;
         margin-left: auto;
@@ -396,10 +434,9 @@ article h4{
     }
     
     #map{
-        margin: 0 auto;
-        padding: 0;
-        height: 100vh;
+        height: 230px;
         width: 100%;
+        padding-top: 5rem;
     }
 
     .mech-head{
@@ -433,18 +470,20 @@ article h4{
         align-self: center;
         justify-content: center;
         border-radius: 1.4rem;
-        margin: 2.5rem auto 1.5rem auto;  
+        margin-top: 20px;
+    }
+    .mech__deets h4 {
+        font-size: 15px;
+        font-weight: 700;
     }
 
-    .mech__row::before{
-        display: none;
-       
-    } 
-    
-    .last::after{
-   display: none;
-    }  
-
+    .mech__deets p {
+        font-size: 10px;
+    }
+    .move {
+        margin-top: -50px;
+        margin-left: 20px;
+    }
 } 
 
 
@@ -539,4 +578,24 @@ footer .send {
 footer img {
     margin-left: 3px;
     margin-top: 2px;
+}
+
+
+@media(max-width: 450px) {
+    #map{
+        height: 350px;
+        width: 100%;
+        padding-top: 5rem;
+    }
+    .move {
+        margin-top: -50px;
+        margin-left: 20px;
+    }
+    .mech__row::before{
+        left: 1.5rem;
+    } 
+    
+    .last::after{
+        left: 1.5rem;
+    }  
 }
