@@ -37,18 +37,18 @@
                 <form id="form" action="">
                     <h6> or fill out your details</h6>
                     <span class="message"></span>
-                    <input type="text" name="fullname" id="fullname" placeholder="Enter Name">
+                    <input class="input" type="text" name="fullname" id="fullname" placeholder="Enter Name" required>
                     <span class="message"></span>
-                    <input type="text" name="mail" id="mail"placeholder="Enter Email">
+                    <input class="input" type="email" name="mail" id="mail"placeholder="Enter Email" required>
                     <span class="message"></span>
-                    <input type="text" name="phone" id="phone"placeholder="Enter Phone Number">
+                    <input class="input" type="text" name="phone" id="phone"placeholder="Enter Phone Number" required>
                     <span class="message"></span>
-                    <input type="text" name="password" id="password" placeholder="Enter Password">
+                    <input class="input" type="password" name="password" id="password" placeholder="Enter Password" required>
                     
                     <input type="checkbox" name="policy" id="policy" value="check">
                     <label for="policy"><span>I accept the </span>Term of Use <span>and</span> Privacy Policy.</label>
                 </form>
-                <a href="location1_page.html"><button>CREATE ACCOUNT</button></a>
+                <a href="location1_page.html"><button type="submit" id="submit">CREATE ACCOUNT</button></a>
             </div>
             <div class="rec">
                 <h6 class="account"><span>Already have an account? </span><a href="signin_page.html" style="color: #4A86f8;">Sign In</a></h6>

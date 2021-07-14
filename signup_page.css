@@ -21,7 +21,7 @@ body {
   color: var(--color);
   margin: 0;
   padding: 0;
-  font-family: DM Sans;
+  font-family: 'lato', sans-serif;
 }
 button {
   padding: 10px;
@@ -176,6 +176,10 @@ span {
           justify-content: center;
 }
 
+.log_cont h3 {
+  color: var(--color);
+}
+
 .social {
   border-bottom: 1px solid #c7c7c7;
   margin-bottom: 1px;
@@ -186,7 +190,7 @@ form {
   width: 100%;
 }
 
-input[type="text"] {
+input[type="text"],input[type="email"],input[type="password"] {
   display: block;
   width: 100%;
   border: 1px solid var(--black);
@@ -194,6 +198,7 @@ input[type="text"] {
   padding: 5px;
   margin-bottom: 10px;
   height: 35px;
+  outline: none;
 }
 
 input[type="tel"] {

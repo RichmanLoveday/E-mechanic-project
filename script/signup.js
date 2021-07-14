@@ -1,8 +1,10 @@
-const inputs = document.querySelectorAll('input[type="text"')
+const inputs = document.querySelectorAll('.input')
+//const inputs = document.querySelectorAll('input[type="text"')
 // console.log(inputs)
-const checkbox = document.querySelector('input[type ="checkbox"')
+const checkbox = document.getElementById('policy')
 // console.log(checkbox)
-const submit = document.querySelector('input[type ="submit"');
+//const submit = document.querySelector('input[type ="submit"');
+const submit = document.getElementById('submit')
 // console.log(submit);
 submit.addEventListener('click', submitFunc)
 const regEx = {

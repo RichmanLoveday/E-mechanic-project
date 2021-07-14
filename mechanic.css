@@ -15,6 +15,7 @@ html {
           box-sizing: border-box;
           margin: 0;
           padding: 0;
+          font-family: 'lato', sans-serif;
 }
 
 body {
@@ -36,28 +37,39 @@ body {
 .flexer{
     display: flex;
     color: #ffffff;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .cont{
-    max-width: 1080px;
+    width: 100%;
     margin: 0 auto;
     padding: 2rem;
+    margin: auto;
 }
 .coltwo{
     padding: 20px;
-    width: 100%;
+    width: 70%;
 }
+.form{
+    margin-top: 2rem;
+    margin-left: 4rem;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
 h2{
     padding: 1em 0 0.3em 0;
     font-size: 4em;
     font-weight: lighter;
+    text-align: center;
 }
 
 .coltwo p {
     font-size: 2em;
     letter-spacing: 0.2%;
     font-weight: lighter;
+    text-align: center;
 }
 
 button {
@@ -92,6 +104,8 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
 h3{
@@ -105,19 +119,13 @@ h3{
     font-size: 1.8em;
     font-weight: lighter;
     line-height: 1.5em;
+    text-align: left;
 }
 .whyjoin{
     width: 200px;
     margin-right: 2rem;
-    
 }
 
-.form{
-    margin-top: 2rem;
-    margin-left: 4rem;
-    justify-content: center;
-    align-items: center;
-}
 
 .joinmech {
     border-radius: 10px;
@@ -128,7 +136,7 @@ h3{
     justify-content: center;
     align-items: center;
     color: black;
-    max-width: 300px;
+    width: 100%;
     background: white;
 }
 
@@ -146,13 +154,21 @@ input{
     margin-bottom: 20px;
     width: 90%;
     height: 35px;
-    padding-left: 5px;
+    border: 0;
+    background-color: rgb(241, 239, 239);
+    outline: none;
+    padding: 10px;
+}
+
+
+input:focus {
+    background-color: rgb(221, 221, 221);
 }
 
 form button{
     display: block;
     margin: 20px auto;
-    width: 90%;
+    width: 60%;
     padding: 5px 0;
     border-radius: 20px;
     border-color: var(--fill);
@@ -162,6 +178,17 @@ form button{
     background-color: var(--fill);
 }
 
+select {
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    background-color: rgb(241, 239, 239);
+}
+
+select:focus {
+    background-color: rgb(221, 221, 221);
+}
 
 .col3, .col4{
     color: black;
@@ -175,6 +202,7 @@ form button{
 
 .flex3{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -211,6 +239,7 @@ form button{
 
 .col4 {
     display: flex;
+    justify-content: center;
 }
 
 .col4 h2 {
@@ -229,9 +258,8 @@ form button{
 }
 
 .mechanic{
-    flex-basis: 240px;
-    margin-right: 40px;
-    margin-top: 30px;
+    flex-basis: 50%;
+    padding: 30px;
 }
 
 .innermech{
@@ -261,7 +289,9 @@ form button{
 }
 
 .img-aside{
-    margin-top: 20px;
+    width: 50%;
+    padding: 20px;
+    margin-top: 30px;
 }
 
 .wide{
@@ -390,9 +420,28 @@ hr{
 
 }
 
+@media(max-width: 1000px) {
+    .flexer{
+        display: flex;
+        color: #ffffff;
+        flex-wrap: wrap;
+    }
+   
+    .form {
+        width: 100%;
+        justify-self: center;
+        margin: 0;
+    }
+    
+    .coltwo {
+        width: 100%;
+    }
+}
 
 @media only screen and (max-width: 900px)  {
-    
+    .reasons{
+        flex-basis: 100%;
+     }
    
     .vid-cont{
         width: 200px;
@@ -413,9 +462,10 @@ hr{
     }
 
     .cont h3 {
+        padding: 10px;
         font-size: 15px;
     }
-   
+    
     
     .bottom-image{
         width: 70%;
@@ -445,8 +495,7 @@ hr{
         width: 100%;
     }
     .mechanic{
-        margin: 0 auto;
-        text-align: center;
+        flex-basis: 100%;
     }
     .count p{
         display: none;
@@ -464,4 +513,8 @@ hr{
         width: 100%;
         
     }
+    .flexer p {
+        text-align: center;
+    }
+   
 }

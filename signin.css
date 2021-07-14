@@ -21,7 +21,7 @@ body {
   color: var(--color);
   margin: 0;
   padding: 0;
-  font-family: DM Sans;
+  font-family: 'lato', sans-serif;
 }
 
 button {
@@ -175,6 +175,11 @@ span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+         
+}
+
+.log_cont h3 {
+    color:var(--color);
 }
 
 .social {
@@ -187,7 +192,7 @@ form {
   width: 100%;
 }
 
-input[type="text"] {
+input[type="email"], input[type="password"] {
   display: block;
   width: 100%;
   border: 1px solid var(--black);
@@ -195,17 +200,17 @@ input[type="text"] {
   padding: 5px;
   margin-bottom: 20px;
   height: 35px;
+  outline: none;
 }
 
-input[type="submit"] {
+/*input[type="submit"] {
   height: 30px;
   width: 100px;
   color: white;
   background-color: var(--fill);
   border: 2px solid var(--fill);
   border-radius: 3px;
-  border: 1px solid brown;
-}
+}*/
 
 .rec {
   width: 350px;

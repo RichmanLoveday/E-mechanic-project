@@ -1,7 +1,8 @@
-const inputs = document.querySelectorAll('input[type="text"')
+const inputs = document.querySelectorAll('.input')
 // console.log(inputs)
-const submit = document.querySelector('input[type ="submit"');
-// console.log(submit);
+//const submit = document.querySelector('input[type="submit"');
+const submit = document.getElementById('submit')
+console.log(inputs);
 submit.addEventListener('click', submitFunc)
 const regEx = {
     mail: /^([\w\.]{1,})\@[a-z]{3,10}(\.com)$/,
@@ -9,7 +10,7 @@ const regEx = {
 }
 inputs.forEach((input) => input.addEventListener('keyup', check))
 function check(e){
-    // console.log(e)
+    console.log(e)
     // console.log(this)
     let test = regEx[this.id].test(this.value);
     // console.log(test)
